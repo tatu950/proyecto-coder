@@ -208,8 +208,8 @@ footer{
 }
 
 .productos{
+    padding-top: 30px;
     background-color: black;
-    flex-wrap: wrap;
     font-family: sans-serif;
 }
 
@@ -221,7 +221,7 @@ footer{
     text-align: center;
     margin-bottom: 20px;
     display: inline-block;
-    padding: 15px;
+    padding: 0px;
 }
 
 .todos-productos{
@@ -235,11 +235,19 @@ footer{
     padding: 5px;
     color: black;
     border-radius: 5px;
+    font-family: sans-serif;
 }
 
 .productos div p{
     margin-bottom: 15px;
+    font-family: sans-serif;
 }
+
+.productos div h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
 
 /*------------------PAGINA SERVICIOS---------------------*/
 
