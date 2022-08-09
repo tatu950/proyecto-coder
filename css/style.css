@@ -13,20 +13,32 @@ body{
 
 /*---HEADER---*/
 
-header nav{
-    background-color:rgb(124, 133, 132);
+header{
+    background-color: rgba(0, 0, 0, 0.329);
     position: fixed;
-    z-index: 10;  
+    width: 100%;
+    z-index: 10;
 }
 
-header nav div a img{
-width: 100px;
-height: 100px;
+header nav{
+    text-align: center;
 }
 
-header nav div a{
-    color: white;
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
 
 /*---MAIN---*/
 
@@ -55,6 +67,10 @@ main{
     margin-bottom: 50px;
 }
 
+.vestidor div{
+    margin-right: 25px;
+    margin-left: 25px;
+}
 .vestidor div h2{
     font-size: 25px;
 }
@@ -121,8 +137,9 @@ main{
     justify-content: center;
     padding: 50px;
     font-size: 15px;
-
+    flex-direction: row;
 }
+
 .aclaraciones div{
     text-align: left;
     padding: 30px;
@@ -216,12 +233,12 @@ footer{
 .productos div{
     width: 200px;
     height: 330px;
-    border: 1px solid white;
     margin-bottom: 10px;
     text-align: center;
     margin-bottom: 20px;
     display: inline-block;
     padding: 0px;
+    margin: 30px;
 }
 
 .todos-productos{
@@ -252,33 +269,34 @@ footer{
 /*------------------PAGINA SERVICIOS---------------------*/
 
 .ubicacion{
-margin-left: 50px;
 text-align: left;
-}
-
-.ubicacion h1{
-    padding-top: 40px;
-}
-.ubicacion p{
-    padding-bottom: 40px;
+padding: 5%;
 }
 
 /*--------------------PAGINA CONTACTO--------------------*/
 
 .cuestionario{
     text-align: left;
-    margin-left: 50px;
-    padding: 40px; ;
+    padding: 5%;
 }
 
 /*--------------------PAGINA POLITICA--------------------*/
 
 .politicas{
-    padding: 20px;
+    padding: 5%;
     text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
+/* ---------------- MEDIA --------------------- */
 
+@media screen and (max-widht: 436px){
+    .aclaraciones {
+        flex-direction: column;
+    }
+}
 
+@media screen and (max-widht: 444px){
+    .hero div img{
+        visibility: hidden;
+    }
+}
