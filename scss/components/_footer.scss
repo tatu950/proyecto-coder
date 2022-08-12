@@ -1,0 +1,29 @@
+@import "../base/variables";
+
+footer{
+    background-color:rgb(124, 133, 132);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 20px;
+        height:20px ;
+    }
+    a{
+        text-decoration: none;
+        color: black
+    }
+    .metodos-de-pago{
+        text-align: left;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .nuestras-redes{
+        align-items: center;
+    }
+}
