@@ -19,11 +19,11 @@ body {
   justify-content: center;
   align-items: center; }
 
-@media screen and (max-widht: 436px) {
+@media screen and (max-width: 436px) {
   .aclaraciones {
-    flex-direction: column; } }
+    flex-direction: row; } }
 
-@media screen and (max-widht: 444px) {
+@media screen and (max-width: 444px) {
   .hero div img {
     visibility: hidden; } }
 
